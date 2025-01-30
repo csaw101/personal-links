@@ -15,6 +15,7 @@ function App() {
   const gitUrl = import.meta.env.VITE_GITHUB;
   const linkedinUrl = import.meta.env.VITE_LINKEDIN;
   const behanceUrl = import.meta.env.VITE_BEHANCE;
+  const name = import.meta.env.VITE_NAME;
 
   const containerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -43,7 +44,7 @@ function App() {
   return (
     <div className="main">
       <div className="bio">
-        Hello, I am _____,
+        Hello, I am {name},
         <br /> a front-end developer,
         <br />
         check some of my work here.
