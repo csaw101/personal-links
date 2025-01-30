@@ -12,6 +12,9 @@ function App() {
   function changeTheme() {
     setToggleDark(!toggleDark);
   }
+  const gitUrl = import.meta.env.VITE_GITHUB;
+  const linkedinUrl = import.meta.env.VITE_LINKEDIN;
+  const behanceUrl = import.meta.env.VITE_BEHANCE;
 
   const containerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -23,22 +26,22 @@ function App() {
     {
       name: "Github",
       Icon: GitHubIcon,
-      link: "#",
+      link: gitUrl,
     },
     {
       name: "LinkedIn",
       Icon: LinkedInIcon,
-      link: "#",
+      link: linkedinUrl,
     },
     {
       name: "Behance",
       Icon: BehanceIcon,
-      link: "#",
+      link: behanceUrl,
     },
   ];
 
   return (
-    <div className="main" onInput={() => console.log("hi")}>
+    <div className="main">
       <div className="bio">
         Hello, I am _____,
         <br /> a front-end developer,

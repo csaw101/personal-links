@@ -8,7 +8,6 @@ function RandomizerButtom({ toggleDark }: { toggleDark: boolean }) {
     const colors: [string, string][] = [
       ["#252725", "#f5cb5c"],
       ["#28231d", "#c9c9a9"],
-      ["#a00013", "#d8b25d"],
       ["#231942", "#be95c4"],
       ["#450920", "#ffa5ab"],
       ["#042917", "#98aa54"],
