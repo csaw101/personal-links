@@ -1,0 +1,42 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* TODO: stagger motion */
+/*.button:nth-child(2) {*/
+/*  animation-delay: 300ms;*/
+/*}*/
+
+.button {
+  width: 100%;
+  border: solid 2px var(--secondary-color);
+  /*width: 80vw;*/
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 900;
+  transition: translate ease 300ms, background-color ease 300ms;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  animation: slideIn 1s ease-out;
+}
+
+.button:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  translate: 4px -4px;
+  /*border: solid 2px var(--primary-color);*/
+  box-shadow: -4px 4px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button-text {
+  margin: auto;
+  user-select: none;
+}

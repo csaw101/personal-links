@@ -1,0 +1,86 @@
+@keyframes shake {
+  from {
+    transform: translateX(-10%);
+  }
+  20% {
+    transform: translateX(10%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  60% {
+    transform: translateX(10%);
+  }
+  80% {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+svg {
+  vertical-align: middle;
+}
+
+.button-icon rect,
+.button-icon svg {
+  fill: var(--secondary-color);
+}
+
+.button-icon path {
+  stroke: var(--primary-color);
+}
+#linkedin-icon path {
+  fill: var(--primary-color);
+  /*stroke: var(--primary-color);*/
+}
+
+.button:hover .button-icon rect,
+.button:hover .button-icon svg {
+  fill: var(--primary-color);
+}
+
+.button:hover .button-icon path {
+  stroke: var(--secondary-color);
+}
+.button:hover #linkedin-icon path {
+  fill: var(--secondary-color);
+}
+
+.link-icon path {
+  stroke: var(--secondary-color);
+}
+
+.button:hover .link-icon path {
+  stroke: var(--primary-color);
+}
+
+.shake {
+  animation: shake ease-in-out 400ms;
+  /* TODO */
+  /*transition-timing-function: cubic-bezier(0.89, 0.1, 0.96, 0.12);*/
+}
+
+.dice-icon svg {
+  fill: var(--primary-color);
+  bottom: 0;
+}
+
+.dice-icon rect {
+  fill: var(--secondary-color);
+}
+
+.moon-icon svg,
+.sun-icon svg {
+  fill: var(--primary-color);
+}
+
+.moon-icon rect,
+.sun-icon rect {
+  fill: var(--secondary-color);
+}
+
+.button:hover .link-icon {
+  transform: scale(1.5);
+}
